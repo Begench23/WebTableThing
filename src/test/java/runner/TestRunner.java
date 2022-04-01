@@ -10,16 +10,12 @@ import org.junit.runner.RunWith;
 
         plugin = {"html:target/cucumberReport.html",
                     "rerun:target/failedReport.txt",
-                "me.jvt.cucumber.report.PrettyReports:target/xpath"},
-
-
+                "me.jvt.cucumber.report.PrettyReports:target/Cucumber"},
 
         features = "src/test/resources/features",
         glue = "stepDefs",
         dryRun = false,
         snippets = CucumberOptions.SnippetType.CAMELCASE
-
-
 )
 
 

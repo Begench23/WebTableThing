@@ -23,7 +23,6 @@ Feature: Web table user order feature multiple parameters
 
     Examples:
       | productType | quantity | customerName   | streetName      | cityName       | stateName | zipCode | cardType         | cardNumber   | expiry/date |
-
       | 1           | 1        | Mila Kunis     | Hamburg st      | Belgrade       | Sting     | 96012   | Visa             | 123456789012 | 12/27       |
       | 2           | 2        | Jannet Jackson | Asik koy kovesi | London         | Adaban    | 90873   | MasterCard       | 123478901256 | 06/29       |
       | 0           | 3        | Apple Cucumber | Lincoln street  | Paris          | Bakers    | 67543   | American Express | 890112345672 | 02/28       |

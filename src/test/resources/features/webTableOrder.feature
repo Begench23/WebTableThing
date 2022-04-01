@@ -1,4 +1,4 @@
-@wip
+@wip1
 Feature: Web table user order feature
 
   TC:01
@@ -7,11 +7,8 @@ Feature: Web table user order feature
     Given user in order page
 
   Scenario: user should be able to place order and order seen in List of All Orders Table
-
     When user selects product type
-
     And user enters quantity
-
     And user enters customer name
     And user enters street
     And user enters city
