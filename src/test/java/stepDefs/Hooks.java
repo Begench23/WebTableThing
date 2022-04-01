@@ -6,6 +6,8 @@ import io.cucumber.java.Scenario;
 import org.junit.Assert;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import pages.HomePage;
 import pages.LoginPage;
 import utils.ConfReader;
@@ -16,6 +18,7 @@ public class Hooks {
     //elements
     LoginPage loginPage =  new LoginPage();
     HomePage homePage = new HomePage();
+    WebDriverWait wait = new WebDriverWait(Driver.getDriver(), 20);
 
     @Before
     public void setUpScenario(){
@@ -29,6 +32,9 @@ public class Hooks {
 
     //assertion
     String expectedText = "Web Table App";
+
+    wait.until(ExpectedConditions.textToBePresentInElement(homePage.appNameHeader,expectedText));
+
     String actualText = homePage.appNameHeader.getText();
     Assert.assertEquals("login fail!",expectedText,actualText);
 

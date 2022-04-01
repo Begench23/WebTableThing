@@ -21,7 +21,7 @@ public class Driver {
 
             WebDriverManager.chromedriver().setup();
             driver.set(new ChromeDriver());
-            driver.get().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+            driver.get().manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 
         }
 
